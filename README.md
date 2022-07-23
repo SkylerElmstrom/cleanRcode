@@ -4,7 +4,7 @@ Or perhaps worse, dozens of unused packages load unnecessarily when the code is 
 Are you exhausted by thousands of lines of code without sections, comments, or other logical organization? <br />
 Perhaps you are here because you are guilty of some of the greatest code style grievances. <br />
 
-It's OK. But please end my suffering by making your code easier to read and reproducible.
+It's OK. But please end my suffering by making your code easier to read and make it reproducible.
 
 ## Roadmap
 This repository will contain tools I've developed for fixing other people's code containing my most common code style and legibility peeves. These tools were primarily designed to speed up my own review of other people's code by making them do it. This includes tools that check for:
