@@ -18,7 +18,7 @@ This repository will contain tools I've developed for fixing other people's code
 - Code that suffered an Eldritch incursion (too much void/empty space, extra blank lines, etc.)
 - Inconsistent variable and local function naming like silly.var, correct_var, incorrect-var, okVar, WhYyYvAr, etc.
 
-Code that is *reviewed* are usually _modified_ by these tools. The new code is printed to the console for copying (or automatically copied to your clipboard if the `clipr` package is present in your R library)
+Code that is *reviewed* are usually _modified_ by these tools. The new code is printed to the console for copying (or automatically copied to your clipboard if the [{clipr}](http://matthewlincoln.net/clipr/) package is present in your R library)
 
 ## Installation
 
