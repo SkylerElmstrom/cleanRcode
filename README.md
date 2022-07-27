@@ -1,8 +1,8 @@
 # Cleaning Up R Code with more R Code
 Are you tired of reviewing coworkers' scripts and finding out there are missing calls to packages? <br />
-Or perhaps worse, dozens of unused packages load unnecessarily when the code is executed?  <br />
+Can you not unsee dozens of unused packages load unnecessarily when the code is executed?  <br />
 Are you exhausted by thousands of lines of code without sections, comments, or other logical organization? <br />
-Perhaps you are here because you are guilty of some of the greatest code style grievances. <br />
+Perhaps you are here because you (like me) are guilty of some of the greatest code style grievances. <br />
 
 It's OK. But please end my suffering by making your code easier to read and make it reproducible.
 
