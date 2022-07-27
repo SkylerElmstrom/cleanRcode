@@ -1,0 +1,45 @@
+---
+title: "Dev Diary - Finding Dependencies"
+author: "Skyler Elmstrom"
+output:
+  html_document:
+    code_folding: show
+---
+
+# RENV solution
+RENV solution is fast, comprehensive, and actually quite useful
+https://rstudio.github.io/renv/reference/dependencies.html
+
+```{r}
+renv::dependencies("../R/sortpackages.R") # clipr is the only dependency
+```
+
+BUT it doesn't really meet all of my needs. Namely:
+
+-  It does not identify packages that are used in the script(s) but missing explicit calls in `library()` or DESCRIPTION
+-  For R package code dependencies, it would be nice if the packages could be quickly added to the DESCRIPTION
+-  It sometimes adds duplicates to its package list (example?)
+-  The line number that the package was found would be helpful for removing/rewriting automatically later
+-  An option to de-duplicate the Package list from `renv::dependencies()` would be nice
+
+```{r}
+dep <- renv::dependencies("../dev/find-dependencies/test.R")
+dep$Package
+```
+
+`renv::dependencies()` calls several internal functions (which apparently can also test functions for dependencies). These functions test for R methods, `::`, `library()`, `require()`, and `requireNamespace()`. This does not check for R markdown LaTeX dependencies, but TinyTeX and Tlmgr can do a decent job of that.
+
+```{r}
+source("../R/sortpackages.R")
+```
+
+## Wrap into package list for alphabetical sorting, describing, calling
+
+I want to use `renv::dependencies()` without the rest of the `{renv}` package... but perhaps I may just rewrite a lighterweight alternative. I think the `renv::dependencies()` output is still useful, I'd just like it to have more information.
+
+```{r}
+source("R/sortpackages.R")
+dep <- renv::dependencies("dev/find-dependencies/test.R")
+package_list <- dep$Package # already sorted alphabetically
+```
+

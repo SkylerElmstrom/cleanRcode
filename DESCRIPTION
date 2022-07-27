@@ -1,0 +1,27 @@
+Package: cleanRcode
+Title: Clean Up R Code to Improve Legibility and Reproducibility
+Version: 0.0.0.9000
+Authors@R: 
+    person("Skyler", "Elmstrom", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package provides code reviewers an opinionated set of tools 
+    for improving R code documentation, describing dependencies, and checking style 
+    based on a few dominant sets of best practices within the R community.
+License: `use_gpl3_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.0
+Suggests: 
+    cleanr,
+    clipr,
+    formatR,
+    formatr,
+    pacman,
+    renv,
+    styler
+Imports: 
+    utils
+Enhances: 
+    devtools,
+    remotes,
+    usethis
