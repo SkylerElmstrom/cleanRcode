@@ -42,3 +42,7 @@ There are also R packages specifically designed for styling your R code automati
 -  [{lintr}](https://lintr.r-lib.org/)
 -  [{formatr}](https://yihui.org/formatr/)
 -  [{cleanr}](https://cran.r-project.org/web/packages/cleanr/vignettes/cleanr_Introduction.html)  
+
+One package from Jim Hester might be valuable in determining which dependencies can be removed from a project and makes recommendations about how to do that for R packages:
+
+-  https://www.tidyverse.org/blog/2019/05/itdepends/
