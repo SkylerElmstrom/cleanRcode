@@ -19,6 +19,7 @@ This repository will contain tools I've developed for fixing other people's code
 - Inconsistent variable and local function naming like silly.var, correct_var, incorrect-var, okVar, WhYyYvAr, etc.
 - Inconsistent assignment and operator spacing [TESTING]
 - Find all markdown code chunks without an empty line before, after it and add an empty line
+- Remove all empty lines right after \`\`\` inside a code chunk
 - Remove excess spaces, selectively (not at beginning of a line like indents)
 - IDentify markdown code chunks that are excessively long (opinionated, configurable, much wow, chunks not chonks)
 
