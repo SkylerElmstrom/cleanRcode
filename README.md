@@ -9,14 +9,15 @@ It's OK. But please end my suffering by making your code easier to read and make
 ## Roadmap
 This repository will contain tools I've developed for fixing other people's code containing my most common code style and legibility peeves. These tools were primarily designed to speed up my own review of other people's code by making them do it. This includes tools that check for:
 
-- Code that does not check that a user has the required packages installed
+- Code that does not check that a user has the required packages installed [TESTING]
 - Code dependencies that are not described in an R script or R markdown file
   - Stray functions without its package called or loaded
   - Stray packages called or loaded with none of its functions in use
   - `package::function` namespace but without its package dependency described
-- Required packages/dependencies not listed in alphabetical order
-- Code that suffered an Eldritch incursion (too much void/empty space, extra blank lines, etc.)
+- Required packages/dependencies not listed in alphabetical order [DONE]
+- Code that suffered an Eldritch incursion (too much void/empty space, extra blank lines, etc.) [TESTING]
 - Inconsistent variable and local function naming like silly.var, correct_var, incorrect-var, okVar, WhYyYvAr, etc.
+- Inconsistent assignment and operator spacing [TESTING]
 
 Code that is *reviewed* are usually _modified_ by these tools. The new code is printed to the console for copying (or automatically copied to your clipboard if the [{clipr}](http://matthewlincoln.net/clipr/) package is present in your R library)
 
