@@ -20,6 +20,7 @@ This repository will contain tools I've developed for fixing other people's code
 - Inconsistent assignment and operator spacing [TESTING]
 - Find all markdown code chunks without an empty line before, after it and add an empty line
 - Remove excess spaces, selectively (not at beginning of a line like indents)
+- IDentify markdown code chunks that are excessively long (opinionated, configurable, much wow, chunks not chonks)
 
 Code that is *reviewed* are usually _modified_ by these tools. The new code is printed to the console for copying (or automatically copied to your clipboard if the [{clipr}](http://matthewlincoln.net/clipr/) package is present in your R library)
 
